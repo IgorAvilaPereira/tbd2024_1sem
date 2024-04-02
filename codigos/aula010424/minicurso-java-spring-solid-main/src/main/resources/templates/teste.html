@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>         
+         <ul>
+            {{#vetAluno}}
+            <li>
+                #{{id}} - {{nome}}  {{email}}  {{matricula}}  
+                {{#endereco}}
+                    {{endereco.cep}}   
+                {{/endereco}}         
+            </li>
+            {{/vetAluno}}
+        </ul>
+        <a href="/aluno">Listar json</a>
+    </body>
+</html>

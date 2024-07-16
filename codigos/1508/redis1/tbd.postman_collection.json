@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "924ff3bf-4cb5-4391-871b-67aed34bb108",
+		"name": "tbd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27501955"
+	},
+	"item": [
+		{
+			"name": "adicionar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/adicionar?nome=cibele&data=1987-01-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"adicionar"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "cibele"
+						},
+						{
+							"key": "data",
+							"value": "1987-01-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/atualizar?id=d977475b-c01d-4eef-907d-6531d67bd503&nome=marcio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"atualizar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "d977475b-c01d-4eef-907d-6531d67bd503"
+						},
+						{
+							"key": "nome",
+							"value": "marcio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"geraldo2\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/deletar/68985fa8-7a7e-4184-a1ef-267567b6b9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"deletar",
+						"68985fa8-7a7e-4184-a1ef-267567b6b9b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"geraldo\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
